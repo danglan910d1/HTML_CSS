@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="phan2.css">
+    <title>Phần 2: Làm quen với css</title>
+    <!-- Internal -->
+    <!-- <style>
+        h1 {
+            color: red;
+            font-size: 30px;
+        }
+    </style> -->
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        .box {
+            font-size: 1rem;
+        }
+
+        a.attr::after{
+            content: " ("attr(href)") ";
+        }
+        
+        .box.attr::after{
+            content: attr(data-title);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Sử dụng css -->
+    <h1 style="color: red; font-size: 16px;">CSS in HTML</h1>
+    <ol>
+        <li>Internal</li>
+        <li>External</li>
+        <li>Inline</li>
+    </ol>
+
+    <!-- ID và CLASS/ CSS Selector -->
+    <h1 class="first-heading">CSS Selector</h1>
+    <h1 class="first-heading">CSS Selector</h1>
+    <h1 class="first-heading">CSS Selector</h1>
+    <h2 id="second-heading">ID và CLASS</h2>
+
+    <!-- Ví dụ CSS Selector -->
+    <p class="class-1">Đoạn văn 1.1</p>
+    <p class="class-1">Đoạn văn 1.2</p>
+
+    <p class="class-2 class-3">Đoạn văn 2.1</p>
+    <p class="class-2 class-3">Đoạn văn 2.2</p>
+
+    <div class="class-4">
+    <p class="class-5">Đoạn văn 3</p>
+    </div>
+
+    <p class="class-6">Đoạn văn 4 - thẻ p</p>
+    <div class="class-6">Nội dung 5 - thẻ div</div>
+
+    <p class="class-7">Đoạn văn 6</p>
+    <p class="class-8">Đoạn văn 7</p>
+
+    <h3>Tiêu đề 8</h3>
+    <h4>Tiêu đề 9</h4>
+
+    <ul class="list">
+    <li>Item 1</li> 
+    <li>Item 2</li> 
+    <li>Item 3
+        <ul>
+            <li>Item 1 (con Item 3)</li>
+            <li>Item 2 (con Item 3)</li>
+        </ul>
+    </li> 
+    </ul>
+
+    <p class="class-9">Đoạn văn 10</p>
+    <p>Đoạn văn 11</p>
+    <p>Đoạn văn 12</p>
+
+    <p class="class-10">Đoạn văn 13</p>
+    <p>Đoạn văn 14</p>
+    <p>Đoạn văn 15</p>
+
+    <div>Vật cản</div>
+
+    <p>Đoạn văn 16</p>
+    <p>Đoạn văn 17</p>
+    <p>Đoạn văn 18</p>
+
+    <!-- Độ ưu tiên trong CSS -->
+    <div>
+        <h1>Độ ưu tiên trong CSS</h1>
+        <ol>
+            <li>Internal, External?
+                <p>Viết mới hơn thì được ưu tiên hơn</p>
+            </li>
+            <li>Inline - 1000</li>
+            <li>id - 100</li>
+            <li>.class - 10</li>
+            <li>tag - 1</li>
+            <li>Equal specificity</li>
+            <li>Universal Selector and inherited? </li>
+        </ol>
+    </div>
+
+    <!-- CSS Variable -->
+    <h1 class="css-var">CSS Variable</h1>
+
+    <!-- Unit -->
+    <div class="box"></div>
+
+    <!-- Hàm attr -->
+    <a class="attr" href="https://fullstack.edu.vn/learning/html-css?id=42c80120-573a-45a5-9c10-4c3ffbeb49dd">Học lập trình</a>
+    <div class="box attr" data-title>Đây là box <i class="fas fa-box-open    "></i></div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 5_4: CSS Position: CSS Sticky</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+
+        li:nth-of-type(4) {
+            color: fuchsia;
+        }
+
+        h1 {
+            padding: 0, 16px;
+            color: #fff ;
+            background-color: #333;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        ol {
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <ol>
+        <li>Relative: Vị trí tương đối, lấy chính mình làm gốc tọa độ, không phụ thuộc vào đối tượng nào khác ở bên ngoài</li>
+        <li>Absolute: Vị trí tuyệt đố. Bị phụ thuộc vào thẻ cha gần nhất có thuộc tính css position. Lấy thẻ cha đó làm gốc.</li>
+        <li>Fixed: Vị trí phụ thuộc vào khung trình duyệt</li>
+        <li>Sticky: Vị trí bám dính phụ thuộc vào khung trình duyệt</li>
+    </ol>
+
+    
+</body>
+</html>

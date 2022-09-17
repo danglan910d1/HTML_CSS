@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 4_3: Background-size keywords</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://www.ostraining.com//images/coding/html5-css3-hd.jpg);
+            background-repeat: no-repeat;
+            /* background-size: contain; */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div>
+        background-size: contain; lấy cạnh dài hơn của màn hình làm chiều rộng, không chấp nhận việc che khuất.
+        background-size: cover; lấy cạnh dài hơn của màn hình làm chiều rộng, chấp nhận việc che khuất.
+    </div>
+</body>
+</html>
